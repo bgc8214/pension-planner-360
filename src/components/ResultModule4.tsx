@@ -4,7 +4,7 @@ import { usePensionContext } from '../context/PensionContext';
 export function ResultModule4() {
   const { 상태 } = usePensionContext();
   const { 자산변화시뮬레이션 } = 상태.결과값;
-  const { 은퇴나이, 연평균수익률 } = 상태.입력값;
+  const { 연평균수익률 } = 상태.입력값;
 
   if (자산변화시뮬레이션.시작자산 === 0) {
     return null;
