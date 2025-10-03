@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pension-planner-360/static/css/main.12b50c6f.css",
+    "main.js": "/pension-planner-360/static/js/main.e2f2085a.js",
+    "static/js/453.44e1d90b.chunk.js": "/pension-planner-360/static/js/453.44e1d90b.chunk.js",
+    "index.html": "/pension-planner-360/index.html",
+    "main.12b50c6f.css.map": "/pension-planner-360/static/css/main.12b50c6f.css.map",
+    "main.e2f2085a.js.map": "/pension-planner-360/static/js/main.e2f2085a.js.map",
+    "453.44e1d90b.chunk.js.map": "/pension-planner-360/static/js/453.44e1d90b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12b50c6f.css",
+    "static/js/main.e2f2085a.js"
+  ]
+}
