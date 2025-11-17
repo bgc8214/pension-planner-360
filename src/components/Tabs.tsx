@@ -17,15 +17,15 @@ export function Tabs({ children }: TabsProps) {
   return (
     <div className="w-full">
       {/* 탭 헤더 */}
-      <div className="flex border-b border-gray-200 bg-white sticky top-0 z-10 shadow-sm">
+      <div className="glass-card mb-6 p-2 flex gap-2 sticky top-4 z-10">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`flex-1 py-4 px-4 text-center font-semibold transition-colors ${
+            className={`flex-1 py-3 px-6 text-center font-display font-semibold rounded-xl transition-all duration-300 ${
               activeTab === index
-                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
-                : 'text-gray-600 hover:text-blue-500 hover:bg-gray-50'
+                ? 'bg-gradient-to-r from-blue-600 to-violet-600 text-white shadow-lg scale-105'
+                : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/50'
             }`}
           >
             {tab.props.label}
@@ -34,7 +34,7 @@ export function Tabs({ children }: TabsProps) {
       </div>
 
       {/* 탭 콘텐츠 */}
-      <div className="mt-4">
+      <div className="mt-4 animate-fade-in">
         {tabs[activeTab]}
       </div>
     </div>
